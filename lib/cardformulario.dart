@@ -32,7 +32,7 @@ class CardFormulario extends StatelessWidget {
                   ),
                   SizedBox(width: 10),
                   Text(
-                    'Análisar de Crédito',
+                    'Análisar crédito',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 24,
