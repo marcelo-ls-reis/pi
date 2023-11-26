@@ -1,6 +1,9 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
+
+import 'formulario_model.dart';
+
 class Login extends StatefulWidget {
   const Login({super.key});
 
@@ -41,7 +44,10 @@ class _LoginState extends State<Login> {
             const SizedBox(height: 16),
             ElevatedButton(
               onPressed: () {
-                // Substitua esta lógica pelo código de autenticação real
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const FormularioModel()),
+                );
                 String username = _usernameController.text;
                 String password = _passwordController.text;
                 if (kDebugMode) {
